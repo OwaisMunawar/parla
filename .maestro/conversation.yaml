@@ -1,0 +1,20 @@
+# Demo build (EXPO_PUBLIC_DEMO=1): one scripted café turn with an inline
+# correction saved to review.
+appId: com.owaismunawar.parla
+---
+- launchApp
+- assertVisible:
+    id: 'home-screen'
+- tapOn:
+    id: 'scenario-cafe'
+- assertVisible: '¡Hola! Bienvenido al Café Sol. ¿Qué te pongo?'
+- longPressOn:
+    id: 'hold-to-talk'
+- extendedWaitUntil:
+    visible: 'un café'
+    timeout: 15000
+- tapOn:
+    id: 'correction-chip'
+- tapOn:
+    id: 'add-to-review'
+- assertVisible: 'Added to review'

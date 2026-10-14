@@ -1,0 +1,5 @@
+# Run with: npm run e2e (a development build must be installed and Metro running).
+flows:
+  - onboarding.yaml
+  - conversation.yaml
+  - paywall.yaml

@@ -1,0 +1,15 @@
+# Demo build, run after conversation.yaml has used the last free slot of the
+# day: the quota upsell leads to the paywall.
+# Completing the purchase needs StoreKit testing, which only Xcode can host.
+appId: com.owaismunawar.parla
+---
+- launchApp
+- assertVisible:
+    id: 'home-screen'
+- tapOn:
+    id: 'quota-upgrade'
+- assertVisible:
+    id: 'paywall-screen'
+- assertVisible: 'Speak without limits'
+- assertVisible:
+    id: 'paywall-restore'

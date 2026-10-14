@@ -1,0 +1,49 @@
+# Fresh install, non-demo build: language, goal, placement, daily goal, soft paywall.
+appId: com.owaismunawar.parla
+---
+- launchApp:
+    clearState: true
+- assertVisible: 'Learn to speak, not just to tap.'
+- tapOn:
+    id: 'language-es'
+- tapOn:
+    id: 'onboarding-continue'
+- tapOn:
+    id: 'goal-travel'
+- tapOn:
+    id: 'onboarding-continue'
+# Five questions: listening answers by tap, speaking ones are skipped so the
+# flow does not depend on a microphone.
+- assertVisible: 'Question 1 of 5'
+- tapOn:
+    id: 'placement-option-0'
+- tapOn:
+    id: 'placement-continue'
+- tapOn:
+    id: 'placement-skip'
+- tapOn:
+    id: 'placement-option-1'
+- tapOn:
+    id: 'placement-continue'
+- tapOn:
+    id: 'placement-skip'
+- tapOn:
+    id: 'placement-option-1'
+- tapOn:
+    id: 'placement-continue'
+- assertVisible:
+    id: 'placement-result'
+- tapOn:
+    id: 'placement-done'
+- tapOn:
+    id: 'daily-goal-40'
+- tapOn:
+    id: 'reminder-off'
+- tapOn:
+    id: 'onboarding-finish'
+- assertVisible:
+    id: 'paywall-screen'
+- tapOn:
+    id: 'paywall-later'
+- assertVisible:
+    id: 'home-screen'

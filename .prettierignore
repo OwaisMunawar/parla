@@ -1,0 +1,10 @@
+node_modules
+coverage
+ios
+android
+.expo
+package-lock.json
+docs/screenshots
+assets
+store
+server/node_modules

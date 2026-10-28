@@ -16,7 +16,7 @@
     "tsx": "^4.23.15"
   },
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^3.0.68",
+    "@ai-sdk/openai-compatible": "^3.0.78",
     "ai": "^7.0.140",
     "zod": "^4.6.7"
   }

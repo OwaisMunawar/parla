@@ -4,7 +4,7 @@
  * from the app, and a contract change has to keep both green.
  */
 const transformIgnorePatterns = [
-  'node_modules/(?!((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|expo-.*|@shopify/react-native-skia|ai|@ai-sdk/.*|@standard-schema/.*|@workflow/.*|eventsource-parser|ts-fsrs))',
+  'node_modules/(?!((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|expo-.*|@shopify/react-native-skia|ai|zod|@ai-sdk/.*|@standard-schema/.*|@workflow/.*|eventsource-parser|ts-fsrs))',
 ];
 
 /** @type {import('jest').Config} */

@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "^3.0.94",
-    "ai": "^7.0.173",
+    "ai": "^7.0.179",
     "zod": "^4.6.7"
   }
 }
